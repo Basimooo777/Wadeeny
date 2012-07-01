@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "fill_parent"
+    android:layout_height = "fill_parent"
+    android:background = "@drawable/white"
+    android:orientation = "vertical" >
+
+    <TableRow android:background="@drawable/white" >
+
+        <ExpandableListView
+            android:id="@+id/list"
+            android:layout_width = "fill_parent"
+            android:layout_height = "200dp" />
+
+        <TextView
+            android:id="@+id/android:empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/noItemExpandableList" />
+
+        <TextView
+            android:id="@+id/android:empty1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/noItemExpandableList" />
+
+        <TextView
+            android:id="@+id/android:empty2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/noItemExpandableList" />
+    </TableRow>
+
+    <TableRow android:background="@drawable/white" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:apiKey="0tHtMTroBZLnd0lin0Acuxb9xmAeHtYg-_RX9vw"
+            android:clickable="true"
+            android:state_enabled="true" >
+        </com.google.android.maps.MapView>
+    </TableRow>
+
+</TableLayout>
